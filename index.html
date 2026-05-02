@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Carlton Landing Digital Perimeter — RevFirma</title>
-<meta name="description" content="A live system managing the digital environment inside Carlton Landing — protecting guests and prioritizing local businesses." />
+<meta name="description" content="We built the digital perimeter around Carlton Landing — a live system managing what people see while they're here." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,300&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
@@ -254,6 +254,30 @@
   ul.bare li::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-top:11px;flex-shrink:0}
   .dark ul.bare li{color:#fff;border-color:#616566}
 
+  /* Hero proof line */
+  .hero-proof{
+    font-family:var(--font-mon);font-size:13px;color:var(--muted);
+    letter-spacing:1px;text-transform:uppercase;margin-top:28px;font-weight:600;
+    display:inline-flex;align-items:center;
+  }
+  .hero-proof .pulse{margin-right:10px}
+
+  /* Category statement (standalone) */
+  .statement{padding:160px 0;text-align:center}
+  .statement p{
+    font-size:64px;font-weight:500;letter-spacing:-.5px;line-height:1.05;
+    max-width:1000px;margin:0 auto;
+  }
+  .statement p + p{margin-top:18px;color:var(--accent)}
+  @media (max-width:900px){
+    .statement{padding:96px 0}
+    .statement p{font-size:42px;line-height:1.08}
+  }
+  @media (max-width:680px){
+    .statement{padding:72px 0}
+    .statement p{font-size:30px;line-height:1.1;letter-spacing:-.3px}
+  }
+
   /* Final CTA */
   .cta{padding:140px 0;text-align:center;background:var(--dark-blue);color:#fff;border-top:1px solid var(--dark-blue)}
   .cta .wrap{max-width:880px}
@@ -363,8 +387,7 @@
   <div class="wrap row">
     <a href="#" aria-label="RevFirma"><img src="assets/logo-lightmode.svg" alt="RevFirma" class="brand-logo"></a>
     <div class="nav-strip">
-      <a class="nav-main" href="#how">How It Works</a>
-      <a class="nav-main" href="#services">Services</a>
+      <a class="nav-main" href="#proof">See It Live</a>
       <a class="btn btn-primary btn-sm" href="#support">Support the Perimeter</a>
     </div>
   </div>
@@ -374,82 +397,21 @@
 <section class="hero">
   <div class="wrap">
     <p class="t-eyebrow eyebrow-arrow"><span class="pulse"></span>Live · Carlton Landing Digital Perimeter</p>
-    <h1 class="t-h1" style="margin-top:24px">Carlton Landing <span class="m">Protects Its</span> Digital Space.</h1>
-    <p class="h-tag">And now, it can own it.</p>
-    <p class="t-lead sub">A live system managing the digital environment inside Carlton Landing — protecting guests and prioritizing local businesses.</p>
+    <h1 class="t-h1" style="margin-top:24px">We Built the Digital Perimeter Around Carlton Landing.</h1>
+    <p class="t-lead sub" style="margin-top:24px">A live system managing what people see while they're here.</p>
+    <p class="t-lead sub">Limits targeting from outside advertisers inside Carlton Landing.</p>
+    <p class="hero-proof"><span class="pulse"></span>Live now · 16,844+ devices/month inside the perimeter</p>
     <div class="ctas">
-      <a class="btn btn-primary" href="#support">Support the Perimeter</a>
-      <a class="btn btn-ghost" href="#how">See How It Works</a>
+      <a class="btn btn-primary" href="#proof">See It Live</a>
+      <a class="btn btn-ghost" href="#support">Support the Perimeter</a>
     </div>
   </div>
 </section>
 
-<!-- 2. BUILT HERE -->
-<section>
-  <div class="wrap col">
-    <p class="t-eyebrow eyebrow-arrow">Built Here</p>
-    <h2 class="t-h2" style="margin-top:18px">The first place we've activated this system in the real world.</h2>
-    <p class="t-lead" style="margin-top:24px">Carlton Landing is the first place we've activated this system in the real world. Thank you for letting us test, learn, and build something new here.</p>
-    <p class="t-lead" style="margin-top:18px;color:var(--fg)"><strong style="font-weight:500">This is not just a pilot. It's the foundation of a new layer of infrastructure.</strong></p>
-    <div class="pullbox">
-      <p class="t-pull">"The digital layer around physical places is currently unowned. We're claiming it."</p>
-    </div>
-  </div>
-</section>
-
-<!-- 3. 4-STAGE ARCHITECTURE -->
-<section id="how" class="gray">
+<!-- 2. VISUAL PROOF -->
+<section id="proof" class="gray">
   <div class="wrap">
-    <p class="t-eyebrow eyebrow-arrow">How It Works</p>
-    <h2 class="t-h2" style="margin-top:18px">Four stages. One operating system for a place.</h2>
-    <p class="t-lead" style="margin-top:20px;max-width:780px">From perimeter to conversion, the system runs on Meta's enterprise ad surface with proprietary saturation methodology and 14 active patent applications.</p>
-
-    <div class="stages" aria-label="Four-stage architecture">
-      <div class="stage">
-        <div class="stage-num">01</div>
-        <div class="stage-label">Perimeter</div>
-        <div class="stage-body">GPS-locked geofence on Meta's ad infrastructure. 1-mile radius, locked center pin, all entry roads covered.</div>
-        <div class="stage-arrow" aria-hidden="true">→</div>
-      </div>
-      <div class="stage">
-        <div class="stage-num">02</div>
-        <div class="stage-label">Saturation</div>
-        <div class="stage-body">Owned-brand creative fills inventory at high frequency. Competitor and recruiter ads suppressed by auction dominance.</div>
-        <div class="stage-arrow" aria-hidden="true">→</div>
-      </div>
-      <div class="stage">
-        <div class="stage-num">03</div>
-        <div class="stage-label">Familiarity</div>
-        <div class="stage-body">30+ impressions over 60 days build name-recognition equivalent to a neighbor's referral.</div>
-        <div class="stage-arrow" aria-hidden="true">→</div>
-      </div>
-      <div class="stage">
-        <div class="stage-num">04</div>
-        <div class="stage-label">Conversion</div>
-        <div class="stage-body">At the moment of need, the visitor recalls the local brand — because trust was pre-loaded over weeks.</div>
-      </div>
-    </div>
-
-    <p class="t-eyebrow" style="margin-top:24px">14 Active Patent Applications · Proprietary Methodology</p>
-  </div>
-</section>
-
-<!-- 4. WHAT THIS IS -->
-<section>
-  <div class="wrap col">
-    <p class="t-eyebrow eyebrow-arrow">What This Is</p>
-    <h2 class="t-h2" style="margin-top:18px">A digital perimeter over Carlton Landing.</h2>
-    <p class="t-lead" style="margin-top:24px">When people are physically here, we manage a large portion of the advertising space they see across platforms like Meta, Google, and The Trade Desk.</p>
-    <p class="t-lead" style="margin-top:18px;color:var(--fg);font-weight:500">Instead of random ads competing for attention, the space becomes intentional.</p>
-  </div>
-</section>
-
-<!-- 5. VISUAL PROOF -->
-<section class="gray">
-  <div class="wrap">
-    <p class="t-eyebrow eyebrow-arrow">Visual Proof</p>
-    <h2 class="t-h2" style="margin-top:18px">This is what people actually see inside the perimeter.</h2>
-    <p class="t-lead" style="margin-top:20px;max-width:760px">A real ad delivered through the live deployment, and the reach footprint that delivers it.</p>
+    <h2 class="t-h3" style="margin-bottom:36px">This is what people actually see inside the perimeter.</h2>
 
     <div class="proof">
       <div class="proof-card">
@@ -483,7 +445,6 @@
             </div>
           </div>
         </div>
-        <div class="proof-cap">Reads as community presence, not advertising.</div>
       </div>
 
       <div class="proof-card">
@@ -492,34 +453,34 @@
         <div class="proof-map" aria-label="Carlton Landing perimeter visualization">
           <video src="assets/perimeter.mp4" autoplay loop muted playsinline preload="auto"></video>
         </div>
-        <div class="reach-stats">
-          <div><div class="rs-num">16,844+</div><div class="rs-lbl">Devices / month</div></div>
-          <div><div class="rs-num">1.0 mi</div><div class="rs-lbl">Geofence radius</div></div>
-          <div><div class="rs-num">100%</div><div class="rs-lbl">Entry-road coverage</div></div>
-        </div>
-        <div class="proof-cap">Every road in is a billboard. 16,844+ devices/month, growing.</div>
       </div>
     </div>
-
-    <p class="below-phone">This is what people actually see inside the perimeter.</p>
   </div>
 </section>
 
-<!-- 6. LIVE METRICS -->
+<!-- 3. WHAT THIS IS -->
 <section>
+  <div class="wrap col">
+    <p class="t-eyebrow eyebrow-arrow">What This Is</p>
+    <h2 class="t-h2" style="margin-top:18px">This is already happening.</h2>
+    <p class="t-lead" style="margin-top:24px">We've built a digital perimeter over Carlton Landing.</p>
+    <p class="t-lead" style="margin-top:14px">When people are here, we manage a large portion of the advertising space they see.</p>
+    <p class="t-lead" style="margin-top:14px;color:var(--fg);font-weight:500">Local businesses are prioritized. Outside influence is reduced.</p>
+  </div>
+</section>
+
+<!-- 4. LIVE METRICS -->
+<section class="gray">
   <div class="wrap">
     <p class="t-eyebrow eyebrow-arrow">Live Metrics</p>
-    <h2 class="t-h2" style="margin-top:18px">The deployment, in numbers.</h2>
-    <p class="t-lead" style="margin-top:20px;max-width:760px">This is real infrastructure, not a concept. Verified data from the live Carlton Landing perimeter.</p>
-
     <div class="metrics">
       <div>
         <div class="m-num">16,844<em>+</em></div>
-        <div class="m-lbl">Devices / month inside the perimeter</div>
+        <div class="m-lbl">Devices / month</div>
       </div>
       <div>
-        <div class="m-num">1.0<em> mi</em></div>
-        <div class="m-lbl">Controlled radius</div>
+        <div class="m-num">1<em> mi</em></div>
+        <div class="m-lbl">Radius</div>
       </div>
       <div>
         <div class="m-num">100<em>%</em></div>
@@ -529,134 +490,43 @@
   </div>
 </section>
 
-<!-- 7. SERVICES -->
-<section id="services" class="gray">
-  <div class="wrap">
-    <p class="t-eyebrow eyebrow-arrow">Services</p>
-    <h2 class="t-h2" style="margin-top:18px">Local services prioritized inside the perimeter.</h2>
-    <p class="t-lead" style="margin-top:20px;max-width:760px">One brand per category. These are the basic services being brought to Carlton Landing inside the perimeter.</p>
-
-    <ul class="services">
-      <li class="taken">
-        <div class="svc-num">01</div>
-        <div class="svc-body">
-          <div class="svc-label">Telehealth Doctor</div>
-          <div class="svc-desc">TeleDirectMD · same-day video visits, $49, no insurance.</div>
-        </div>
-        <div class="svc-pill">Reserved</div>
-      </li>
-      <li class="taken">
-        <div class="svc-num">02</div>
-        <div class="svc-body">
-          <div class="svc-label">Legal Services</div>
-          <div class="svc-desc">Estate, real estate, and family — one practice prioritized.</div>
-        </div>
-        <div class="svc-pill">Reserved</div>
-      </li>
-      <li class="taken">
-        <div class="svc-num">03</div>
-        <div class="svc-body">
-          <div class="svc-label">Auto Brand</div>
-          <div class="svc-desc">Dealership, service, and trade-in routed to one brand.</div>
-        </div>
-        <div class="svc-pill">Reserved</div>
-      </li>
-    </ul>
-    <p class="t-small muted" style="margin-top:18px">Additional categories will be added as new local partners join.</p>
-  </div>
-</section>
-
-<!-- 8. WHY IT MATTERS -->
+<!-- 5. WHY IT MATTERS -->
 <section>
   <div class="wrap col">
-    <p class="t-eyebrow eyebrow-arrow">Why It Matters</p>
-    <h2 class="t-h2" style="margin-top:18px">Outside companies influence people standing inside this community.</h2>
-    <p class="t-lead" style="margin-top:24px">Right now, outside companies decide where guests eat, shop, and book next. They don't have to be here. They don't have to contribute.</p>
-    <p class="t-lead" style="margin-top:18px;color:var(--fg);font-weight:500">This system changes that.</p>
-    <ul class="bare">
+    <p class="t-eyebrow eyebrow-arrow">Why this matters</p>
+    <ul class="bare" style="margin-top:18px">
+      <li>Keeps revenue inside Carlton Landing</li>
       <li>Supports local businesses first</li>
-      <li>Keeps revenue inside the community</li>
-      <li>Creates a more consistent visitor experience</li>
+      <li>Reduces outside influence and retargeting</li>
     </ul>
   </div>
 </section>
 
-<!-- 9. PROTECTION + CONTROL -->
-<section class="gray">
-  <div class="wrap col">
-    <p class="t-eyebrow eyebrow-arrow">Protection + Control</p>
-    <h2 class="t-h2" style="margin-top:18px">This isn't just advertising. It's control over the digital environment.</h2>
-    <ul class="bare">
-      <li>Reduces outside influence from national chains</li>
-      <li>Limits aggressive retargeting and tracking</li>
-      <li>Aligns what people see with the community around them</li>
-      <li>Fast alert system for emergencies</li>
-      <li>Protects our families and guests against outside intruders</li>
-    </ul>
-    <div class="pullbox" style="background:#fff;border-left-color:var(--accent)">
-      <p class="t-pull">Over time, this becomes a new economic layer — where local businesses can own access to attention here.</p>
-    </div>
+<!-- 6. CATEGORY STATEMENT -->
+<section class="dark statement">
+  <div class="wrap">
+    <p>The digital layer around physical places is unowned.</p>
+    <p>We're claiming it.</p>
   </div>
 </section>
 
-<!-- 10. CLEANER DIGITAL ENVIRONMENT -->
+<!-- 7. LIVE DEPLOYMENT -->
 <section>
   <div class="wrap col">
-    <p class="t-eyebrow eyebrow-arrow">A Cleaner Digital Environment</p>
-    <h2 class="t-h2" style="margin-top:18px">Today, attention inside the community is sold to the highest bidder.</h2>
-    <p class="t-lead" style="margin-top:24px">The most aggressive advertiser — not the most trusted business — often wins attention.</p>
-    <p class="t-lead" style="margin-top:18px;color:var(--fg);font-weight:500">The perimeter shifts that.</p>
-    <ul class="bare">
-      <li>Reduces unwanted retargeting from outside companies</li>
-      <li>Limits misleading or high-pressure advertising</li>
-      <li>Creates a more predictable, trusted digital experience</li>
-    </ul>
-    <p class="t-pull" style="margin-top:18px">Not restriction — just a cleaner, more intentional signal.</p>
+    <p class="t-eyebrow eyebrow-arrow"><span class="pulse"></span>Currently Running</p>
+    <h2 class="t-h2" style="margin-top:18px">Live deployment.</h2>
+    <p class="t-lead" style="margin-top:24px">Running through May 15 as part of demonstrations with Y Combinator, Techstars, gener8tor, Rose Rock, and Northwestern Mutual — alongside other leading accelerator programs.</p>
   </div>
 </section>
 
-<!-- 11. THE FUTURE -->
-<section class="gray">
-  <div class="wrap col">
-    <p class="t-eyebrow eyebrow-arrow">The Future</p>
-    <h2 class="t-h2" style="margin-top:18px">Every place already has roads, power, and internet.</h2>
-    <p class="t-lead" style="margin-top:24px">But no one controls the digital environment people experience while they're there.</p>
-    <p class="t-lead" style="margin-top:18px;color:var(--fg);font-weight:500">That's changing.</p>
-    <p class="t-body" style="margin-top:18px">The communities that do will:</p>
-    <ul class="bare">
-      <li>Protect their businesses</li>
-      <li>Shape their identity</li>
-      <li>Capture more economic value</li>
-    </ul>
-    <div class="pullbox" style="background:#fff;border-left-color:var(--accent)">
-      <p class="t-pull">Carlton Landing is one of the first.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 12. LIVE NOW -->
-<section class="dark" id="livenow">
-  <div class="wrap col">
-    <p class="t-eyebrow eyebrow-arrow"><span class="pulse"></span>Live Deployment</p>
-    <h2 class="t-h2" style="margin-top:18px">Live Deployment — Carlton Landing</h2>
-    <p class="t-lead" style="margin-top:24px">The Carlton Landing digital perimeter is currently live and operating.</p>
-    <p class="t-lead" style="margin-top:18px">This is not a simulation or pilot environment. It is a real-world deployment measuring how digital influence behaves inside a defined physical boundary.</p>
-    <p class="t-lead" style="margin-top:18px">We are actively running this system through May 15 as part of ongoing demonstrations and evaluation. This includes demonstrations with Y Combinator, Techstars, gener8tor, Rose Rock, and Northwestern Mutual — alongside other leading accelerator programs.</p>
-    <div class="pullbox">
-      <p class="t-pull" style="font-style:normal;font-weight:500">The objective is simple: prove that physical places can own and operate their digital environment.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 13. CTA -->
+<!-- 8. FINAL CTA -->
 <section id="support" class="cta">
   <div class="wrap">
     <p class="t-eyebrow eyebrow-arrow"><span class="pulse"></span>Be Part of It</p>
-    <h2 class="t-h2" style="margin-top:18px">If you believe Carlton Landing should control its own digital space, we'd like your support.</h2>
+    <h2 class="t-h2" style="margin-top:18px">Support Carlton Landing owning its digital space.</h2>
     <div class="ctas">
-      <a class="btn btn-primary" href="#support">Support the Perimeter</a>
+      <a class="btn btn-primary" href="mailto:James@RevFirma.com?subject=Support%20the%20Perimeter">Support the Perimeter</a>
       <a class="btn btn-secondary" href="mailto:James@RevFirma.com?subject=Carlton%20Landing%20Partnership">Partner With Us</a>
-      <a class="btn btn-ghost" href="tel:9366613027">Talk to Us</a>
     </div>
   </div>
 </section>
